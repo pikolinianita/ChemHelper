@@ -51,6 +51,24 @@ mindmap
       CarboxylateSalt((+Na))
 
 ```
+```mermaid
+graph TD;
+    subgraph Alkanes
+      A[Alkanes] -->|Cl2 / UV light| B[Haloalkanes];
+      B -->| NaOH| G[Alcohols];
+      G -->| HCl| B;
+    end
+
+    subgraph Alkenes
+      C[Alkenes] -->|Cl2| D[Dichloroalkanes];
+      C -->|HCl| E[Haloalkanes];
+      C -->|H2 / Pt, Pd, or Ni| F[Alkanes];
+      C -->|H2O / H+| G[Alcohols];
+      G -->|Elimination / H2SO4, heat| C;
+    end
+```
+
+
 
 ```mermaid
 graph TD;
@@ -131,7 +149,12 @@ graph TD;
     class M,N,O,P alkynes;
     class G,J,K alcohols;
     class H aldehydes;
-    class I,L carboxylic;graph TD;
+    class I,L carboxylic;
+```
+
+
+```mermaid
+graph TD;
     %% Group 1: Alkanes
     subgraph "Alkanes & Haloalkanes" 
       A[Alkanes] -->|Cl2 / UV light| B[Haloalkanes];
